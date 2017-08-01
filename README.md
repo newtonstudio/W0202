@@ -18,3 +18,4 @@ https://help.github.com/articles/basic-writing-and-formatting-syntax/#headings
 
 # Log
 1. Add index.html
+2. Add about.html
