@@ -8,7 +8,7 @@ class Contact_model extends CI_Model {
 	public function record_count($where=array()) {
 
 		$this->db->select("COUNT(*) AS total");
-		$query = $this->db->get("contact", $where);
+		$query = $this->db->get_where("contact",$where);
 		$row = $query->row_array();
 		return !empty($row['total'])?$row['total']:0;
 

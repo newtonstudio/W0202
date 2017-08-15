@@ -23,6 +23,9 @@ class Contact_manage extends CI_Controller {
 			'is_deleted' => 0,
 		));
 
+		//echo $total_item;
+		//exit;
+
 
 
 		$start = ($page - 1) * $item_per_page;
@@ -39,6 +42,7 @@ class Contact_manage extends CI_Controller {
 		$config['base_url'] = base_url('manage');
 		$config['total_rows'] = $total_item;
 		$config['per_page'] = $item_per_page;
+		$config['uri_segment'] = 2;
 		$config['use_page_numbers'] = TRUE;
 
 		$config['full_tag_open'] = '<ul class="pagination">';
