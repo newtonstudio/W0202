@@ -1,7 +1,7 @@
 <?php
-class Contact_model extends CI_Model {
+class User_model extends CI_Model {
 
-	private $table_name = "contact";
+	private $table_name = "user";
 
 	public function __construct(){
 		$this->load->database();

@@ -50,6 +50,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+$route['fbcallback'] = "login_manage/fbcallback";
+$route['fblogin'] = "login_manage/fblogin";
+$route['login'] = "login_manage/login";
+$route['api/googleLogin'] = "api_manage/googleLogin";
+$route['testmachine'] = "api_manage/testmachine";
+$route['testToken'] = "api_manage/testToken";
+$route['api/postNews'] = "api_manage/postNews";
+$route['api/getNewsList'] = "api_manage/getNewsList";
+$route['api/getNewsList/(:any)'] = "api_manage/getNewsList/$1";
+
+$route['newslist'] = 'contact_manage/newslist';
+
+
+
 $route['manage'] = 'contact_manage/manage';
 $route['manage/(:num)'] = 'contact_manage/manage/$1';
 $route['contact'] = 'contact_manage/index';

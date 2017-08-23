@@ -15,17 +15,20 @@ class News_model extends CI_Model {
 
 	}
 
-	public function getOne($id=""){
+	public function getOne($where=array()){
 
 		//SELECT * FROM news WHERE id = '$id'
 
-		$this->db->where(array(
-			'id' => $id,
-		));
+		$this->db->where($where);
 		$query = $this->db->get("news");
 		//return associative array
 		return $query->row_array();
 		
+	}
+
+	public function insert($insert_array=array()){
+		$this->db->insert("news", $insert_array);
+		return $this->db->insert_id();
 	}
 
 }

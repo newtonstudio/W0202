@@ -24,6 +24,8 @@
       padding: 40px 15px;      
     }
     </style>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     
@@ -43,7 +45,14 @@
             <li <?=$pageName=="index"?'class="active"':''?>><a href="<?=base_url('contact')?>">Contact</a></li>
             <li <?=$pageName=="manage"?'class="active"':''?>><a href="<?=base_url('manage')?>">Manage</a></li>
 
-            <li <?=$pageName=="report"?'class="active"':''?>><a href="<?=base_url('report')?>">Report</a></li>            
+            <li <?=$pageName=="report"?'class="active"':''?>><a href="<?=base_url('report')?>">Report</a></li>  
+
+            <li <?=$pageName=="newslist"?'class="active"':''?>><a href="<?=base_url('newslist')?>">News</a></li> 
+
+            <li <?=$pageName=="login"?'class="active"':''?>><a href="<?=base_url('login')?>">Google Login</a></li> 
+
+            <li <?=$pageName=="fblogin"?'class="active"':''?>><a href="<?=base_url('fblogin')?>">FB Login</a></li>  
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>

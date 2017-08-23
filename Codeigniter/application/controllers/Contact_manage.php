@@ -1,9 +1,21 @@
 <?php
 class Contact_manage extends CI_Controller {
 
+	private $data = array();
+
 	public function __construct(){
 		parent::__construct();
 		$this->load->model('Contact_model');
+	}
+
+	public function newslist(){		
+
+		$this->data['pageName'] = "newslist";
+
+		$this->load->view("contact/header", $this->data);
+		$this->load->view("contact/newslist", $this->data);
+		$this->load->view("contact/footer", $this->data);
+
 	}
 
 	public function testmail(){
